@@ -13,7 +13,7 @@ import java.security.MessageDigest;
 public class WendaUtil {
     private static final Logger logger = LoggerFactory.getLogger(WendaUtil.class);
 
-    public static int ANONYMOUS_USERID=3;//匿名用户的id
+    public static int ANONYMOUS_USERID=1;//匿名用户的id
 
     public static String getJSONString(int code) {
         JSONObject json = new JSONObject();

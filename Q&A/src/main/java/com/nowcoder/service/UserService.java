@@ -22,6 +22,11 @@ public class UserService {
     @Autowired
     LoginTicketDAO loginTicketDAO;
 
+    public User selectByName(String name){
+        return userDAO.selectByName(name);
+    }
+
+
     //用户注册的服务
     public Map<String,Object> register(String username,String password){
         Map<String,Object> map=new HashMap<String,Object>();
